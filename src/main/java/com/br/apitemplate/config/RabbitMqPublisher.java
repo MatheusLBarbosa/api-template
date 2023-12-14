@@ -1,6 +1,6 @@
 package com.br.apitemplate.config;
 
-import com.br.apitemplate.dto.PedidoDTO;
+import com.br.apitemplate.dto.pedido.PedidoDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Value;

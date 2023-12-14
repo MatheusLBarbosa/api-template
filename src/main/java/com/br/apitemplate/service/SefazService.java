@@ -13,7 +13,7 @@ import java.util.Random;
 public class SefazService {
 
     public SefazResponse authorize(SefazRequest request){
-        log.info("Sefazrequest: {}", request);
+        log.info("Sefaz Request: {}", request);
         return new SefazResponse("43210392754738001134550040000159551330237069", "0237069",
                 LocalDateTime.now(), "NDMyMTAzOTI3NTQ3MzgwMDExMzQ1NTAwNDAwMDAxNTk1NTEzMzAyMzcwNjk=");
     }

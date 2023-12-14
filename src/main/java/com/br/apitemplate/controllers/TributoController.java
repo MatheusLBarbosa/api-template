@@ -1,6 +1,6 @@
 package com.br.apitemplate.controllers;
 
-import com.br.apitemplate.dto.response.TributoResponse;
+import com.br.apitemplate.dto.tributo.TributoResponse;
 import com.br.apitemplate.service.TributoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

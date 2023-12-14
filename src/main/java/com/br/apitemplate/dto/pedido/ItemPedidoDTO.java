@@ -1,4 +1,4 @@
-package com.br.apitemplate.dto;
+package com.br.apitemplate.dto.pedido;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;

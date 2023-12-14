@@ -1,8 +1,8 @@
 package com.br.apitemplate.service;
 
 import com.br.apitemplate.config.RabbitMqPublisher;
-import com.br.apitemplate.dto.PedidoDTO;
-import com.br.apitemplate.dto.response.AutorizacaoVendaResponse;
+import com.br.apitemplate.dto.pedido.PedidoDTO;
+import com.br.apitemplate.dto.pedido.AutorizacaoVendaResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

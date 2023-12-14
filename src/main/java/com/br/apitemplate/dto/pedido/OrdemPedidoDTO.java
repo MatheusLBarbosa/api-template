@@ -1,4 +1,4 @@
-package com.br.apitemplate.dto;
+package com.br.apitemplate.dto.pedido;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,7 +8,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 public class OrdemPedidoDTO implements Serializable {
-    String numeroPedido;
-    String numeroOrdemExterno;
-    String dataAutorizacao;
+    private String numeroPedido;
+    private String numeroOrdemExterno;
+    private String dataAutorizacao;
 }

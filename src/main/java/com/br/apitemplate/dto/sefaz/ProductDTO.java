@@ -1,13 +1,9 @@
 package com.br.apitemplate.dto.sefaz;
 
-import com.br.apitemplate.dto.ItemPedidoDTO;
-import com.br.apitemplate.dto.response.TributoResponse;
-import lombok.Data;
+import com.br.apitemplate.dto.tributo.TributoResponse;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.List;
 
 @Getter
 @Setter

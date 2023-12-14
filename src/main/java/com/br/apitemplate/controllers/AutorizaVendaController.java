@@ -1,7 +1,7 @@
 package com.br.apitemplate.controllers;
 
-import com.br.apitemplate.dto.PedidoDTO;
-import com.br.apitemplate.dto.response.AutorizacaoVendaResponse;
+import com.br.apitemplate.dto.pedido.PedidoDTO;
+import com.br.apitemplate.dto.pedido.AutorizacaoVendaResponse;
 import com.br.apitemplate.service.AutorizaVendaService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

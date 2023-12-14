@@ -1,6 +1,6 @@
 package com.br.apitemplate.dto.sefaz;
 
-import com.br.apitemplate.dto.ClienteDTO;
+import com.br.apitemplate.dto.pedido.ClienteDTO;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

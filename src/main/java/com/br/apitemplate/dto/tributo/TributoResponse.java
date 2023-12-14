@@ -1,4 +1,4 @@
-package com.br.apitemplate.dto.response;
+package com.br.apitemplate.dto.tributo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

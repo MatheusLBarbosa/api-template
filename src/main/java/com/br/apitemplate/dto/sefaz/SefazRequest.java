@@ -1,13 +1,11 @@
 package com.br.apitemplate.dto.sefaz;
 
-import com.br.apitemplate.dto.ClienteDTO;
-import com.br.apitemplate.dto.ItemPedidoDTO;
-import com.br.apitemplate.dto.OrdemPedidoDTO;
-import com.br.apitemplate.dto.response.TributoResponse;
+import com.br.apitemplate.dto.pedido.ClienteDTO;
+import com.br.apitemplate.dto.pedido.ItemPedidoDTO;
+import com.br.apitemplate.dto.pedido.OrdemPedidoDTO;
+import com.br.apitemplate.dto.tributo.TributoResponse;
 import lombok.*;
-import org.apache.commons.beanutils.PropertyUtils;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

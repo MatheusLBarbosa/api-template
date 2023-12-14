@@ -1,6 +1,6 @@
 package com.br.apitemplate.client;
 
-import com.br.apitemplate.dto.response.TributoResponse;
+import com.br.apitemplate.dto.tributo.TributoResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
