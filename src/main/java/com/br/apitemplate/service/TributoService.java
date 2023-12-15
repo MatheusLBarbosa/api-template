@@ -10,6 +10,6 @@ public class TributoService {
 
     public TributoResponse getMatrizTributaria(int sku){
         log.info("Buscando matriz tributária do sku: {}", sku);
-        return new TributoResponse(sku, 38, 12, 9, 58);
+        return new TributoResponse(sku, 38.0, 12.0, 9.0, 58.0);
     }
 }

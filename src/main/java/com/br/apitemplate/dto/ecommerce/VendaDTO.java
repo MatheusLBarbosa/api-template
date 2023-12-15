@@ -17,18 +17,18 @@ public class VendaDTO {
     private String numeroPedido;
     private String numeroOrdemExterno;
     private Double valorTotal;
-    private Long qtdItem;
+    private Integer qtdItem;
     private String vendaRequest;
     private LocalDateTime dataAtualizacao;
     private LocalDateTime dataRequisicao;
     private String chaveNfe;
-    private Long numeroNota;
+    private Integer numeroNota;
     private LocalDateTime dataEmissao;
     private String pdf;
     private String situacao;
     private String motivo;
 
-    public VendaDTO(String canal, Integer codigoEmpresa, Integer codigoLoja, Integer numeroPdv, String numeroPedido, String numeroOrdemExterno, Double valorTotal, Long qtdItem, String vendaRequest, LocalDateTime dataAtualizacao, LocalDateTime dataRequisicao, String chaveNfe, Long numeroNota, LocalDateTime dataEmissao, String pdf, String situacao, String motivo) {
+    public VendaDTO(String canal, Integer codigoEmpresa, Integer codigoLoja, Integer numeroPdv, String numeroPedido, String numeroOrdemExterno, Double valorTotal, Integer qtdItem, String vendaRequest, LocalDateTime dataAtualizacao, LocalDateTime dataRequisicao, String chaveNfe, Integer numeroNota, LocalDateTime dataEmissao, String pdf, String situacao, String motivo) {
         this.canal = canal;
         this.codigoEmpresa = codigoEmpresa;
         this.codigoLoja = codigoLoja;

@@ -40,8 +40,5 @@ public class ListenerService {
                 throw new RuntimeException(e);
             }
         });
-
-
-
     }
 }

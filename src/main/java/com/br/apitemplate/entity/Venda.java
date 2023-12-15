@@ -1,21 +1,22 @@
 package com.br.apitemplate.entity;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.ToString;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.sql.Clob;
 import java.time.LocalDateTime;
 @Entity
 @ToString
+@Builder
 @Table(name = "VENDA", schema = "ECOMMERCE")
 public class Venda implements Serializable {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         @Column(name = "ID", updatable = false, nullable = false, unique = true)
-        private BigInteger id;
+        private Long id;
         @Column(name = "CANAL", nullable = false, length = 100)
         private String canal;
         @Column(name = "CODIGO_EMPRESA", nullable = false)
@@ -31,7 +32,8 @@ public class Venda implements Serializable {
         @Column(name = "VALOR_TOTAL", nullable = false, precision = 38, scale = 2)
         private BigDecimal valorTotal;
         @Column(name = "QTD_ITEM", nullable = false, precision = 38)
-        private BigDecimal qtdItem;
+        private Integer qtdItem;
+        @Lob
         @Column(name = "VENDA_REQUEST", nullable = false)
         private Clob vendaRequest;
         @Column(name = "DATA_ATUALIZACAO", nullable = false)
@@ -41,9 +43,10 @@ public class Venda implements Serializable {
         @Column(name = "CHAVE_NFE", length = 44)
         private String chaveNfe;
         @Column(name = "NUMERO_NOTA", precision = 38)
-        private BigDecimal numeroNota;
+        private Integer numeroNota;
         @Column(name = "DATA_EMISSAO")
         private LocalDateTime dataEmissao;
+        @Lob
         @Column(name = "PDF")
         private Clob pdf;
         @Column(name = "SITUACAO", nullable = false, length = 100)

@@ -19,7 +19,6 @@ public class AutorizaVendaService {
     public AutorizacaoVendaResponse createOrder(PedidoDTO request) {
         log.info("c=SaleService, m=createOrder: processing order creation...");
         publisher.sendMessage(request);
-
         return new AutorizacaoVendaResponse("PROCESSING", LocalDateTime.now());
     }
 }

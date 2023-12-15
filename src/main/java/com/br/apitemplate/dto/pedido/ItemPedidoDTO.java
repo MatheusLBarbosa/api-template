@@ -8,7 +8,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 public class ItemPedidoDTO implements Serializable {
-    private Integer sku;
-    private Long quantidade;
+    private int sku;
+    private int quantidade;
     private double valor;
 }
