@@ -2,7 +2,7 @@ CREATE SCHEMA ECOMMERCE;
 
 CREATE TABLE ECOMMERCE.VENDA
 (
-    id                   NUMBER(38, 0) PRIMARY KEY,
+    id                   NUMBER(38, 0) AUTO_INCREMENT PRIMARY KEY,
     canal                VARCHAR2(100) NOT NULL,
     codigo_empresa       INTEGER       NOT NULL,
     codigo_loja          INTEGER       NOT NULL,

@@ -9,15 +9,15 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class ProductDTO {
-    private int sku;
-    private int amount;
+    private Integer sku;
+    private Long amount;
     private double value;
     private double icmsValue;
     private double pisValue;
     private double difaulValue;
     private double fcpIcmsValue;
 
-    public ProductDTO(int sku, int amount, double value, TributoResponse tributoResponse){
+    public ProductDTO(Integer sku, Long amount, double value, TributoResponse tributoResponse){
         this.sku = sku;
         this.amount = amount;
         this.value = value;

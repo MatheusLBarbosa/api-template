@@ -34,9 +34,9 @@ public class ListenerService {
                 TributoResponse tributoResponse = tributoClient.getMatrizTributaria(sku.getSku());
                 sefazResponse.set(sefazClient.authorize(new SefazRequest(message.getOrdemPedido(), message.getCliente(), message.getItens(), tributoResponse)));
                 callbackService.invokeCallback(sefazResponse.get(), message.getOrdemPedido());
-
+                ecommerceService.invokePersistence(sku, message, sefazResponse, "PROCESSADO", "SUCESSO");
             } catch (Exception e) {
-
+                ecommerceService.invokePersistence(sku, message, sefazResponse, "FALHA DE PROCESSAMENTO", "ERRO AO PROCESSAR VENDA");
                 throw new RuntimeException(e);
             }
         });
